@@ -36,3 +36,34 @@ function sayHi() {
 };
 
 print(sayHi);
+
+
+// DOM操作　イベントリスナ
+
+const h1Element = document.querySelector("h1");
+console.log(h1Element);
+h1Element.textContent = "変更後 Hi"
+console.log(h1Element.textContent);
+
+const btnElement = document.querySelector("button");
+btnElement.addEventListener("click", (e) => {
+    console.dir(e.target.textContent);
+    console.log("hello")
+});
+
+
+// 
+const arry = [10, 20, 30, 40];
+const newArry = [];
+
+for(let i = 0; i < arry.length; i += 1) {
+    newArry.push(arry[i] * 2);
+};
+
+console.log(newArry);
+
+const newArry2 = arry.map(val => {
+    return val * 2;
+})
+
+console.log(newArry2);
