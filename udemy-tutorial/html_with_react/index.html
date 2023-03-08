@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    </head>
+
+    <body>
+
+        <div id="app"></div>
+
+        <script type="text/babel">
+            const appEl = document.querySelector("#app");
+            const root = ReactDOM.createRoot(appEl)
+            function Example() {
+                return (
+                    <div>
+                        <h1>Hello components</h1>
+                        <h2>Goodbye components</h2>
+                    </div>
+                )
+            }
+
+            root.render(<Example />)
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,19 @@
+.useProps {
+    margin: 1rem 20rem;
+    padding: 1rem;
+    border: 2px solid gray;
+}
+.useProps.orange {
+    border: 5px solid orange;
+}
+.useProps.pink {
+    border: 5px solid pink;
+}
+.useProps.black {
+    border: 5px solid black;
+}
+.practice {
+    border: 1px solid gold;
+    padding: .5rem;
+    margin: 1rem 20rem;
+}
